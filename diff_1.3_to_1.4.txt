@@ -1,0 +1,30 @@
+diff --git a/1.3/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll b/1.4/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll
+index 0d90ef5..45a0300 100644
+Binary files a/1.3/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll and b/1.4/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll differ
+diff --git a/1.3/Source/RebeccaRealistic/RebeccaRealistic.csproj b/1.4/Source/RebeccaRealistic/RebeccaRealistic.csproj
+index 5f727e3..0041f22 100644
+--- a/1.3/Source/RebeccaRealistic/RebeccaRealistic.csproj
++++ b/1.4/Source/RebeccaRealistic/RebeccaRealistic.csproj
+@@ -14,10 +14,10 @@
+     <Deterministic>true</Deterministic>
+   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+-    <DebugSymbols>true</DebugSymbols>
+-    <DebugType>full</DebugType>
++    <DebugSymbols>false</DebugSymbols>
++    <DebugType>none</DebugType>
+     <Optimize>false</Optimize>
+-    <OutputPath>bin\Debug\</OutputPath>
++    <OutputPath>..\..\Assemblies\</OutputPath>
+     <DefineConstants>DEBUG;TRACE</DefineConstants>
+     <ErrorReport>prompt</ErrorReport>
+     <WarningLevel>4</WarningLevel>
+@@ -32,7 +32,7 @@
+   </PropertyGroup>
+   <ItemGroup>
+     <Reference Include="0Harmony">
+-      <HintPath>..\..\..\..\..\0Harmony.dll</HintPath>
++      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
+       <Private>False</Private>
+     </Reference>
+     <Reference Include="Assembly-CSharp">

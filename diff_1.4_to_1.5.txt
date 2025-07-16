@@ -1,0 +1,29 @@
+diff --git a/1.4/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll b/1.5/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll
+index 45a0300..3a6a0f5 100644
+Binary files a/1.4/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll and b/1.5/Assemblies/UdderlyEvelyn.RebeccaRealistic.dll differ
+diff --git a/1.4/Source/RebeccaRealistic/RebeccaRealistic.csproj b/1.5/Source/RebeccaRealistic/RebeccaRealistic.csproj
+index 0041f22..2aa5a53 100644
+--- a/1.4/Source/RebeccaRealistic/RebeccaRealistic.csproj
++++ b/1.5/Source/RebeccaRealistic/RebeccaRealistic.csproj
+@@ -32,7 +32,7 @@
+   </PropertyGroup>
+   <ItemGroup>
+     <Reference Include="0Harmony">
+-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
++      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2009463077\1.5\Assemblies\0Harmony.dll</HintPath>
+       <Private>False</Private>
+     </Reference>
+     <Reference Include="Assembly-CSharp">
+diff --git a/1.4/Source/RebeccaRealistic/StorytellerComp_Realistic.cs b/1.5/Source/RebeccaRealistic/StorytellerComp_Realistic.cs
+index d36e598..17c47df 100644
+--- a/1.4/Source/RebeccaRealistic/StorytellerComp_Realistic.cs
++++ b/1.5/Source/RebeccaRealistic/StorytellerComp_Realistic.cs
+@@ -175,7 +175,7 @@ namespace RR
+ 			RebeccaLog("Rebecca is calculating defaultThreatPointsNow for incident \"" + rollingForIncidentDef.defName + "\" with worker \"" + (rollingForIncidentDef.Worker == null ? "NULL" : rollingForIncidentDef.Worker.GetType().FullName) + "\".");
+ 			bool rollingForRaid = rollingForIncidentDef.Worker is IncidentWorker_RaidEnemy || 
+ 								  (rollingForIncidentDef.tale != null && rollingForIncidentDef.tale.defName == "Raid");
+-			bool rollingForManhunters = rollingForIncidentDef.Worker is IncidentWorker_ManhunterPack;
++			bool rollingForManhunters = rollingForIncidentDef.Worker is IncidentWorker_AggressiveAnimals;
+ 			bool rollingForInfestation = rollingForIncidentDef.Worker is IncidentWorker_Infestation || 
+ 										 rollingForIncidentDef.Worker.def.defName == "IncidentWorker_BlackHive" ||
+ 										 rollingForIncidentDef.Worker.def.defName == "BI_InsectRaid" ||
