@@ -175,7 +175,7 @@ namespace RR
 			RebeccaLog("Rebecca is calculating defaultThreatPointsNow for incident \"" + rollingForIncidentDef.defName + "\" with worker \"" + (rollingForIncidentDef.Worker == null ? "NULL" : rollingForIncidentDef.Worker.GetType().FullName) + "\".");
 			bool rollingForRaid = rollingForIncidentDef.Worker is IncidentWorker_RaidEnemy || 
 								  (rollingForIncidentDef.tale != null && rollingForIncidentDef.tale.defName == "Raid");
-			bool rollingForManhunters = rollingForIncidentDef.Worker is IncidentWorker_ManhunterPack;
+			bool rollingForManhunters = rollingForIncidentDef.Worker is IncidentWorker_AggressiveAnimals;
 			bool rollingForInfestation = rollingForIncidentDef.Worker is IncidentWorker_Infestation || 
 										 rollingForIncidentDef.Worker.def.defName == "IncidentWorker_BlackHive" ||
 										 rollingForIncidentDef.Worker.def.defName == "BI_InsectRaid" ||
