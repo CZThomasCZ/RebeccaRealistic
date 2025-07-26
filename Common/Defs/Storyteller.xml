@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
-
-<StorytellerDef ParentName="BaseStoryteller">
+  
+  <StorytellerDef ParentName="BaseStoryteller">
     <defName>Rebecca</defName>
     <label>Rebecca Realistic</label>
     <description>Randy's sister Rebecca doesn't hold your hand - the world doesn't care about how much you've suffered when events unfold.</description>
@@ -136,4 +136,4 @@
     </comps>
   </StorytellerDef>
   
-  </Defs>
+</Defs>
