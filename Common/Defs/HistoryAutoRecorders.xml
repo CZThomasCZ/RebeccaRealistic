@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+  
   <HistoryAutoRecorderDef>
     <defName>Wealth_Considered</defName>
     <label>wealth (considered)</label>
@@ -9,5 +9,5 @@
     <workerClass>RR.HistoryAutoRecorderWorker_ConsideredWealth</workerClass>
     <valueFormat>${0}</valueFormat>
   </HistoryAutoRecorderDef>
-
+  
 </Defs>
