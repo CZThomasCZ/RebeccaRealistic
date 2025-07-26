@@ -8,21 +8,21 @@ using Verse;
 
 namespace RR
 {
-	public class StorytellerCompProperties_Realistic : StorytellerCompProperties
-	{
-		public float mtbDays;
+  public class StorytellerCompProperties_Realistic : StorytellerCompProperties
+  {
+    public float mtbDays;
 
-		public List<IncidentCategoryEntry> categoryWeights = new List<IncidentCategoryEntry>();
+    public List<IncidentCategoryEntry> categoryWeights = new List<IncidentCategoryEntry>();
 
-		public float maxThreatBigIntervalDays = 99999f;
+    public float maxThreatBigIntervalDays = 99999f;
 
-		public FloatRange randomPointsFactorRange = new FloatRange(0.5f, 1.5f);
+    public FloatRange randomPointsFactorRange = new FloatRange(0.5f, 1.5f);
 
-		public bool skipThreatBigIfRaidBeacon;
+    public bool skipThreatBigIfRaidBeacon;
 
-		public StorytellerCompProperties_Realistic()
-		{
-			compClass = typeof(StorytellerComp_Realistic);
-		}
-	}
+    public StorytellerCompProperties_Realistic()
+    {
+      compClass = typeof(StorytellerComp_Realistic);
+    }
+  }
 }
